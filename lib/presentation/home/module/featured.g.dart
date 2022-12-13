@@ -7,11 +7,11 @@ part of 'featured.dart';
 // **************************************************************************
 
 Featured _$FeaturedFromJson(Map<String, dynamic> json) => Featured(
-      title: json['title'] as String,
-      cover: json['cover'] as String,
-    );
+  title: json['title'] as String,
+  cover: json['cover'] as String,
+);
 
 Map<String, dynamic> _$FeaturedToJson(Featured instance) => <String, dynamic>{
-      'title': instance.title,
-      'cover': instance.cover,
-    };
+  'title': instance.title,
+  'cover': instance.cover,
+};

@@ -1,24 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'home.dart';
+import 'package:lab4marandici/initializer/di-initializer.dart';
+import 'package:lab4marandici/presentation/app.dart';
 
-
-
-void main() {
-  runApp( MyApp());
-}
-
-class MyApp extends StatelessWidget {
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        home:  Home(),
-        theme: ThemeData(primarySwatch: Colors.blue));
-
-
-  }
+Future<void> main() async {
+  await DIInitializer.init();
+  runApp(App());
 }
